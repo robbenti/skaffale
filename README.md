@@ -1,0 +1,4 @@
+skaffale
+========
+
+A digital library

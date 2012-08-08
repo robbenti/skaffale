@@ -14,4 +14,12 @@
         <module>skaffale-web</module>
         <module>skaffale-ear</module>
     </modules>
+    
+    <dependencies>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>6.0</version>
+        </dependency>
+    </dependencies>
 </project>

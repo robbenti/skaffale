@@ -10,5 +10,38 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>skaffale-web</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Skaffale</name>
+    
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.2</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>       
+            <dependency>
+                <groupId>org.richfaces</groupId>
+                <artifactId>richfaces-bom</artifactId>
+                <version>4.2.2.Final</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.richfaces.ui</groupId>
+                <artifactId>richfaces-components-ui</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.richfaces.core</groupId>
+                <artifactId>richfaces-core-impl</artifactId>
+            </dependency>
+        </dependencies>
+                
+    </dependencyManagement>
 </project>
